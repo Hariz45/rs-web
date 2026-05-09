@@ -1,6 +1,33 @@
 import React from 'react'
 
 const Contact = () => {
+
+
+
+  const handlewhatsapp = (e) => {
+    e.preventDefault()
+
+
+    const name = e.target[0].value;
+    const email = e.target[1].value;
+    const subject = e.target[2].value;
+    const message = e.target[3].value;
+
+    const phoneNumber = "919629204867"
+
+    const text = `
+    name: ${name}
+    email: ${email}
+    subject: ${subject}
+    message: ${message}
+    `;
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+    window.location.href=whatsappURL;
+  }
+
+
+
   return (
     <section id="contact" className="contact-section">
 
@@ -52,28 +79,32 @@ const Contact = () => {
 
           </div>
 
-          <form className="contact-form">
+          <form onSubmit={handlewhatsapp} className="contact-form">
 
             <input
               type="text"
               placeholder="Your Name"
+
               required
             />
 
             <input
               type="email"
+
               placeholder="Your Email"
               required
             />
 
             <input
               type="text"
+
               placeholder="Subject"
               required
             />
 
             <textarea
               placeholder="Your Message"
+
               required
             ></textarea>
 
