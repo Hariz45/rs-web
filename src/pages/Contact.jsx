@@ -13,7 +13,7 @@ const Contact = () => {
     const subject = e.target[2].value;
     const message = e.target[3].value;
 
-    const phoneNumber = "919629204867"
+    const phoneNumber = "917604974617"
 
     const text = `
     name: ${name}
