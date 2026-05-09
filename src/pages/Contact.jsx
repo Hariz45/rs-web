@@ -16,14 +16,17 @@ const Contact = () => {
     const phoneNumber = "917604974617"
 
     const text = `
-    name: ${name}
+    Hello RW Software Solutions,
+
+      I am contacting you through your website regarding your services and opportunities.
+      name: ${name}
     email: ${email}
     subject: ${subject}
     message: ${message}
     `;
 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-    window.location.href=whatsappURL;
+    window.location.href = whatsappURL;
   }
 
 
