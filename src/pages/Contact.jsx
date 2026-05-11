@@ -26,7 +26,7 @@ const Contact = () => {
     `;
 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-   window.open(whatsappURL, "_blank");
+  window.location.assign(whatsappURL);
   }
 
 
