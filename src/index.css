@@ -897,9 +897,7 @@
 
 
 
-/* =========================
-   TABLET RESPONSIVE
-========================= */
+/* Tablet responsive */
 
 @media (max-width: 992px) {
 
@@ -944,9 +942,7 @@
 }
 
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+/* mobile responsive */
 
 @media (max-width: 768px) {
 
@@ -1073,7 +1069,6 @@
 
 
 
-/* Horizontal scroll fix */
 * {
   box-sizing: border-box;
 }
@@ -1084,7 +1079,7 @@ body {
   
 }
 
-/* Mobile overflow fix */
+
 @media (max-width: 768px) {
   .hero-card,
   .project-card,

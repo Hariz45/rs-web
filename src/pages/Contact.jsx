@@ -80,6 +80,7 @@ return (
 
           <input
             type="text"
+            name='name'
             placeholder="Your Name"
 
             required
@@ -87,21 +88,21 @@ return (
 
           <input
             type="email"
-
+            name='email'
             placeholder="Your Email"
             required
           />
 
           <input
             type="text"
-
+            name='subject'
             placeholder="Subject"
             required
           />
 
           <textarea
             placeholder="Your Message"
-
+            name='message'
             required
           ></textarea>
 
