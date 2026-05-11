@@ -1,4 +1,7 @@
 import React from 'react'
+
+const Contact = () => {
+  
 const handlewhatsapp = () => {
   const name = document.querySelector('input[name="name"]').value;
   const email = document.querySelector('input[name="email"]').value;

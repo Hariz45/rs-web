@@ -11,7 +11,7 @@ import intern from "../assets/intern.svg"
 
 const Service = () => {
   return (
-    <section id='service'>
+    <section id='services'>
       <div>
         <div className='section-title'>
           <span>Our Sercvices</span>
