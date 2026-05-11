@@ -2,10 +2,9 @@ import React from 'react'
 
 const Contact = () => {
   
-const handlewhatsapp = () => {
+const handlewhatsapp = (e) => {
   e.preventDefault()
 
-  
   const name = document.querySelector('input[name="name"]').value;
   const email = document.querySelector('input[name="email"]').value;
   const subject = document.querySelector('input[name="subject"]').value;
@@ -22,9 +21,9 @@ Email: ${email}
 Subject: ${subject}
 Message: ${message}`;
 
-  const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(text)}`;
+const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
 
-  window.location.href = whatsappURL;
+  window.open(whatsappURL, "_self");
 };
 
 
@@ -79,7 +78,7 @@ return (
 
         </div>
 
-        <form className="contact-form">
+        <form onSubmit={handlewhatsapp} className="contact-form">
 
           <input
             type="text"
@@ -111,7 +110,6 @@ return (
 
           <button
             type="submit"
-            onClick={handlewhatsapp}
             className="contact-btn"
           >
             Send Message
